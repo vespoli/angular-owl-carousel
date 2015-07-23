@@ -1,0 +1,8 @@
+.owl-carousel(owl-carousel data-options="{ margin: 2,loop: false, responsive : {0 : { items : 1}, 480 : {items : 2},768 : {items : 3} }}")
+  .item(owl-carousel-item ng-repeat="item in audioCarouselItems.data")
+    figure
+      .image-wrap(ng-if="item.image.self")
+        include ../node-interact/_default.jade
+        img(src="{{item.image.self}}" alt="{{item.image.alt}}")
+      figcaption
+        h2: a(relative-path href="{{item.alias}}") {{item.title}}
