@@ -1,4 +1,4 @@
-angular.module('ccbApp').directive('owlCarousel', function(){
+angular.module('myApp').directive('owlCarousel', function(){
   return {
     restrict: 'A',
     transclude: false,
@@ -17,7 +17,7 @@ angular.module('ccbApp').directive('owlCarousel', function(){
   };
 });
 
-angular.module('ccbApp').directive('owlCarouselItem', [function() {
+angular.module('myApp').directive('owlCarouselItem', [function() {
   return {
     restrict: 'A',
     transclude: false,
@@ -31,7 +31,7 @@ angular.module('ccbApp').directive('owlCarouselItem', [function() {
 }]);
 
 //example with events attached
-// angular.module('ccbApp').directive('owlGalleryCarousel', function(){
+// angular.module('myApp').directive('owlGalleryCarousel', function(){
 //   return {
 //     restrict: 'A',
 //     transclude: false,
