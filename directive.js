@@ -1,3 +1,5 @@
+// derived from accepted answer here: 
+// http://stackoverflow.com/questions/27988502/applying-angularjs-ng-repeat-to-owl-carousel
 angular.module('myApp').directive('owlCarousel', function(){
   return {
     restrict: 'A',
